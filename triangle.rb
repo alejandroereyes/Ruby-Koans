@@ -14,6 +14,8 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
+  raise TriangleError if a <= 0 || b <= 0 || c <= 0
+  raise TriangleError if a + b <= c || a + c <= b || b + c <= a
   if a == b && a == c
     :equilateral
   elsif (a == b && b != c) || (a != b && b == c) || (a == c && b != c)
@@ -26,3 +28,23 @@ end
 # Error class used in part 2.  No need to change this code.
 class TriangleError < StandardError
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
