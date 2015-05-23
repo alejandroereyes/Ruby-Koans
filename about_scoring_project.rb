@@ -30,6 +30,11 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 # Your goal is to write the score method.
 
 def score(dice)
+  # notes to self to improve this
+  # add inner 1 & 5 conditional w/counter to range loop in order
+  # to have range loop handle all numbers
+  # use max & min on dice arrto set start & end point for range
+
   points = 0
   # handle 1
   if dice.count(1) >= 3
